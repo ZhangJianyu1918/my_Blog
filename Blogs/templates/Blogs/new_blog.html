@@ -1,0 +1,15 @@
+{% extends 'Blogs/base.html' %}
+{% block content %}  
+      <label for="message">Blog</label>
+      <textarea rows="10" cols="100" class="form-control"  
+      name="message" placeholder="Blog" aria-describedby="messageHelp"></textarea>
+      <span id="messageHelp" class="form-text text-muted" style="display: none;">
+      Please write your blog.
+    </span>
+  </div>
+  <div class="text-center">
+    <a href={% url 'new_blog' %}>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </a>
+  </div>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'Blogs/base.html' %}
+{% block content%}
+    <div class="jumbotron jumbotron-fluid text-center">
+      <p class="lead">Write your everything that want to write.</p>
+      <hr class="my-4">
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href={% url 'new_blog' %} role="button">Write Blog</a>
+        <p class='lead'>
+        <a class="btn btn-primary btn-lg" href={% url 'topics' %} role="button">Watch Blog</a>
+        </p>
+      </p>
+    </div>
+{% endblock content%}
